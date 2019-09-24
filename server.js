@@ -1,9 +1,5 @@
 const mongoose = require('mongoose');
 
-var DATABASE_NAME
-DATABASE_USER
-DATABASE_PASSWORD
-
 // Make sure we are running node 7.6+
 const [major, minor] = process.versions.node.split('.').map(parseFloat);
 if (major < 7 || (major === 7 && minor <= 5)) {
@@ -15,9 +11,12 @@ if (major < 7 || (major === 7 && minor <= 5)) {
 require('dotenv').config({ path: 'variables.env' });
 
 // Connect to our Database and handle any bad connections
-console.log('Using: ' +  process.env.DATABASE);
 
-mongoose.connect(process.env.DATABASE, { useNewUrlParser: true, useUnifiedTopology: true  });
+var DATABASE = 'mongodb://' + process.env.DATABASE_USER + ':' + process.env.DATABASE_PASSWORD + '@' + '127.0.0.1:27017/' + process.env.DATABASE_NAME;
+
+console.log('Using: ' +  DATABASE);
+
+mongoose.connect(DATABASE, { useNewUrlParser: true, useUnifiedTopology: true  });
 mongoose.Promise = global.Promise; // Tell Mongoose to use ES6 promises
 mongoose.connection.on('error', (err) => {
   console.error(`🙅 🚫 🙅 🚫 🙅 🚫 🙅 🚫 → ${err.message}`);
