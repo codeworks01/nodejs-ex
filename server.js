@@ -12,7 +12,7 @@ require('dotenv').config({ path: 'variables.env' });
 
 // Connect to our Database and handle any bad connections
 
-var DATABASE = 'mongodb://' + process.env.DATABASE_USER + ':' + process.env.DATABASE_PASSWORD + '@' + '0.0.0.0:27017/' + process.env.DATABASE_NAME;
+var DATABASE = 'mongodb://' + process.env.DATABASE_USER + ':' + process.env.DATABASE_PASSWORD + '@' + '127.0.0.1:27017/' + process.env.DATABASE_NAME;
 
 console.log('Using: ' +  DATABASE);
 
