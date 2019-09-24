@@ -251,3 +251,12 @@ This repository is compatible with Node.js 4 and higher, excluding any alpha or 
 ### License
 
 This code is dedicated to the public domain to the maximum extent permitted by applicable law, pursuant to [CC0](http://creativecommons.org/publicdomain/zero/1.0/).
+
+
+```
+npm i --save express express-session mongoose connect-mongo path cookie-parser body-parser passport es6-promisify connect-flash express-validator axios dompurify dotenv faker forever glob html-to-text jimp juice md5 moment mongoose-mongodb-errors multer nodemailer passport passport-local passport-local-mongoose pug slugs uuid validator
+```
+
+```
+npm i --save-dev autoprefixer babel-core babel-loader babel-preset-latest concurrently css-loader extract-text-webpack-plugin node-sass nodemon now postcss-loader sass-loader webpack
+```
