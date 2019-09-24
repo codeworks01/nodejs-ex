@@ -27,7 +27,6 @@ mongoose.connection.on('error', (err) => {
 
 // Start our app!
 const app = require('./app');
-
-const server = app.listen(8080, 0.0.0.0, () => {
+const server = app.listen(8080,  '0.0.0.0', () => {
   console.log(`Express running → PORT ${server.address().port}`);
 });
