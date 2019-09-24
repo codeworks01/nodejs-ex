@@ -29,7 +29,7 @@ mongoose.connection.on('error', (err) => {
 const app = require('./app');
 
 var port = process.env.PORT  || 8080,
-    ip   = process.env.IP    ||  '0.0.0.0';
+    ip   = process.env.IP    ||  0.0.0.0;
 
 const server = app.listen(port, ip, () => {
   console.log(`Express running → PORT ${server.address().port}`);
