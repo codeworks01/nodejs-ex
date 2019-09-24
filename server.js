@@ -28,7 +28,7 @@ mongoose.connection.on('error', (err) => {
 // Start our app!
 const app = require('./app');
 
-var port = process.env.PORT  || 8080,
+var port = process.env.PORT  ||  8080,
     ip   = process.env.IP    ||  0.0.0.0;
 
 const server = app.listen(port, ip, () => {
