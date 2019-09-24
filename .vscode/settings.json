@@ -3,6 +3,6 @@
     "titleBar.activeForeground": "#ffffff",
     "titleBar.inactiveForeground": "#fefefecc",
     "titleBar.activeBackground": "#ff0000",
-    "titleBar.inactiveBackground": "#FFFF"
+    "titleBar.inactiveBackground": "#ff8a8a"
   }
 }
