@@ -17,6 +17,7 @@
     "express-validator": "^6.2.0",
     "faker": "^4.1.0",
     "forever": "^1.0.0",
+    "fs": "0.0.1-security",
     "glob": "^7.1.4",
     "html-to-text": "^5.1.1",
     "jimp": "^0.8.4",
