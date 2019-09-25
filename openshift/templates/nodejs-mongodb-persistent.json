@@ -558,6 +558,18 @@
       "displayName": "Custom NPM Mirror URL",
       "description": "The custom NPM mirror URL",
       "value": ""
+    },
+    {
+      "name": "SECRET",
+      "displayName": "Express Session Secrets",
+      "description": "Express Session Secrets",
+      "value": ""
+    },
+    {
+      "name": "KEY",
+      "displayName": "Express Session Key",
+      "description": "Express Session Key",
+      "value": ""
     }
   ]
 }
